@@ -4,7 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -14,6 +13,16 @@ body {
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
+
+  /*   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  /*   background-size: contain; */
+  background-position: top right 20%;
 }
 .container {
   max-width: 1140px;
@@ -80,6 +89,7 @@ body {
 .main-content {
   display: flex;
   align-items: center;
+  margin-bottom: 85px;
 }
 .play {
   background: #902929;
@@ -104,4 +114,86 @@ body {
   border-radius: 50%;
   left: -16px;
   top: -16px;
+}
+/* slider */
+.series {
+  display: flex;
+  align-items: center;
+  max-width: 420px;
+  position: relative;
+}
+.swiper-container {
+  max-width: 390px;
+  margin-left: 0;
+}
+.card {
+  width: 164px;
+  height: 113px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 13px;
+  margin-right: 30px;
+}
+.card-subtitle {
+  font-size: 10px;
+  line-height: 12px;
+  padding-bottom: 2px;
+}
+.card-title {
+  font-size: 14px;
+  line-height: 16px;
+}
+.series-1 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2d2d2d 100%), url("../images/series/series-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.series-2 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2d2d2d 100%), url("../images/series/series-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.arrow {
+  width: 32px;
+  height: 23px;
+  border: none;
+  background-image: url("../images/series/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  position: absolute;
+  /*   top: 50%; */
+  right: 0;
+}
+/* footer */
+.footer {
+  background-color: #141218;
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: transparent;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.4;
+}
+.footer-link {
+  /*  color: #3a383d; */
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 25px;
+}
+.copyright {
+  /*  color: #3a383d; */
+  font-size: 14px;
+  line-height: 20px;
 }
